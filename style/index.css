@@ -1,0 +1,22 @@
+@import url(./global.css);
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./about.css);
+
+/* body */
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "about about about about"
+    "footer footer footer footer";
+
+  background-color: black;
+  color: #fff;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #fff;
+}
