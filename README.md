@@ -15,6 +15,7 @@ Em breve...
 
 ## 📄 Estrutura do projeto
 
+```
 📁 /css
 ├── global.css
 ├── header.css
@@ -25,9 +26,10 @@ Em breve...
 📁 /img
 └── imagens
 
-📄 index.html  
-📄 README.md  
+📄 index.html
+📄 README.md
 📄 about.md
+```
 
 ## 💡 Objetivo
 
