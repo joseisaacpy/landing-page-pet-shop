@@ -1,4 +1,78 @@
+/* footer */
 .footer {
   grid-area: footer;
-  background-color: #fff;
+  background-color: #f04c3c;
+  color: #fff;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container de marcas */
+.container-footer-marcas {
+  gap: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* sub container de marcas */
+.container-marcas {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* imagens das marcas */
+.container-marcas img {
+  border-radius: 10px;
+}
+
+/* container de informacoes */
+.container-footer-info {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+/* itens do container de informacoes */
+.container-footer-info div {
+  min-height: 100%;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+/* responsivo */
+@media (max-width: 800px) {
+  .container-footer-info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  /* .container-footer-info div {
+    text-align: center;
+  } */
+  .container-marcas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container-marcas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
