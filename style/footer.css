@@ -54,6 +54,12 @@
   text-align: left;
 }
 
+/* contaier de redes sociais */
+.redes {
+  display: flex;
+  gap: 0.6rem;
+}
+
 /* responsivo */
 @media (max-width: 800px) {
   .container-footer-info {
